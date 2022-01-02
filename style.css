@@ -7,7 +7,7 @@
 .title_font {
   color: #1449FF;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .article_font {
@@ -15,32 +15,39 @@
   font-size: 20px;
 }
 
-#start_btn {
+.large_btn {
   background-color: #1449FF;
   color: #FFFFFF;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-weight: bold;
   font-size: 30px;
   border: 0;
-  outline: 0;
   box-shadow: 2px 2px 8px 2px grey;
+  transition: 0.3s;
 }
 
-#A {
+.small_btn {
   background-color: #1449FF;
   color: #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 20px;
   border: 0;
-  outline: 0;
   box-shadow: 2px 2px 8px 2px grey;
+  transition: 0.3s;
 }
 
-#B {
-  background-color: #1449FF;
-  color: #FFFFFF;
-  font-size: 20px;
-  border: 0;
-  outline: 0;
-  box-shadow: 2px 2px 8px 2px grey;
+.large_btn:hover{
+  background-color: #ffca14;
+  color: #1449FF;
+  cursor: pointer;
+}
+
+.small_btn:hover{
+  background-color: #ffca14;
+  color: #1449FF;
+  cursor: pointer;
 }
 
 #wrap {
@@ -62,11 +69,29 @@
 }
 
 #result_img {
-  margin: auto 0;
-  width: 50%;
+  margin: 30px 30px 20px 30px;
+  width: 80%;
+  box-shadow: 2px 2px 8px 2px grey;
 }
 
 #result {
   text-align: center;
   display: none;
+}
+
+#explain {
+  border: 0.3em solid;
+  padding: 1em 1em 1em 1em;
+  border-color: #ffca14;
+  text-align: left;
+}
+
+#mymbti {
+  font-size: 40px;
+  color: #ffca14;
+  box-sizing: border-box;
+  background-color: #1449FF;
+  border : 6px solid;
+  border-color: #ffca14;
+
 }
