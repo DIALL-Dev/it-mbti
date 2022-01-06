@@ -191,6 +191,9 @@ var testStart = function() {
   document.querySelector('#main').style.display = "none";
   document.querySelector('#test').style.display = "block";
   next();
+  dataLayer.push({
+    'event':'start'
+  });
 }
 
 document.querySelector('#start_btn').addEventListener('click', testStart);
@@ -203,6 +206,9 @@ var retry = function() {
   EI.value = SN.value = TF.value = JP.value = 0;
   history.replaceState({}, null, location.pathname);
   next();
+  dataLayer.push({
+  'event': 'retry'
+});
 }
 
 document.querySelector('#retry_btn').addEventListener('click', retry);
@@ -213,10 +219,18 @@ document.querySelector('#A').addEventListener('click', function() {
   var preValue = document.querySelector('#' + type).value;
   document.querySelector('#' + type).value = preValue + 1;
   next();
+  dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'A'
+});
 })
 
 document.querySelector('#B').addEventListener('click', function() {
   next();
+  dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'B'
+});
 })
 
 //문제 넘기기 + 결과 도출 함수
@@ -251,6 +265,11 @@ var next = function() {
     document.querySelector('#job_name').innerHTML = result[mbti]['job_name'];
     document.querySelector('#result_img').setAttribute("src", 'img/result_img/' + result[mbti]['img']);
     history.replaceState({result: result}, '', '?result='+ mbti);
+    dataLayer.push({
+      'event':'test_complete',
+      'mbti' : mbti,
+      'result_name':result[mbti]['job_name']
+    });
     // MBTI 결과 쿼리 파라미터 삽입
   } else {
     document.querySelector('#number').innerHTML = i + '/12';
@@ -260,6 +279,10 @@ var next = function() {
     document.querySelector('#type').value = testNum[i]['type'];
     document.querySelector('#A').innerHTML = testNum[i]['A'];
     document.querySelector('#B').innerHTML = testNum[i]['B'];
+    dataLayer.push({
+  'event':'view_question',
+  'question_no': i
+});
     i++;
   }
 
@@ -285,6 +308,9 @@ Kakao.isInitialized();
 
 // 카톡 공유 실행 함수
 var kakaoShare = function() {
+  dataLayer.push({
+  'event':'kakao_share'
+});
 
   var title = document.querySelector('#mymbti').textContent;
   var desc = document.querySelector('#explain').textContent;
