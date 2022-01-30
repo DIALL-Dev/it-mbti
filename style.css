@@ -1,58 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 * {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #515151;
+  line-height: 200%;
 }
 
-.title_font {
-  color: #1449FF;
+
+.title_box {  
+  color: #ffca14;
+
+  box-sizing: border-box;
   font-weight: bold;
-  font-size: 45px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #1449FF;
+  border : 3px solid;
+  padding: 0.5rem;
+  border-color: #ffca14;
+  margin-bottom: 0;
+  position: relative;
+  border-radius: 10px;
 }
 
-.article_font {
-  color: #454545;
-  font-size: 20px;
+.text_box {
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  position: relative;
 }
 
 .large_btn {
   background-color: #1449FF;
   color: #FFFFFF;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  height: 3.5rem;
+  padding: 0.5rem;
   font-weight: bold;
-  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
   border: 0;
-  box-shadow: 2px 2px 8px 2px grey;
+  box-shadow: 4px 4px 10px 2px #B3B3B3;
   transition: 0.3s;
+  border-radius: 10px;
+  /* width: 70%;
+  margin: auto;
+  display: block; */
 }
 
 .small_btn {
   background-color: #1449FF;
   color: #FFFFFF;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 20px;
+  height: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
   border: 0;
-  box-shadow: 2px 2px 8px 2px grey;
+  box-shadow: 4px 4px 10px 2px #B3B3B3;
   transition: 0.3s;
+  border-radius: 10px
 }
 
-.large_btn:hover{
+.large_btn:hover {
   background-color: #ffca14;
   color: #1449FF;
   cursor: pointer;
 }
 
-.small_btn:hover{
+.small_btn:hover {
   background-color: #ffca14;
   color: #1449FF;
   cursor: pointer;
+}
+
+.body {
+  background-color: black;
+}
+
+.url {
+  text-decoration-line: none;
 }
 
 #wrap {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 600px;
+  height: 200vh;
+  margin: auto;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
 }
 
 #main {
@@ -68,30 +103,50 @@
   display: none;
 }
 
-#result_img {
-  margin: 30px 30px 20px 30px;
-  width: 80%;
-  box-shadow: 2px 2px 8px 2px grey;
-}
-
 #result {
   text-align: center;
   display: none;
 }
 
-#explain {
-  border: 0.3em solid;
-  padding: 1em 1em 1em 1em;
-  border-color: #ffca14;
-  text-align: left;
+#result_content_wrap {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 5%;
+  box-shadow: 4px 4px 10px 2px #B3B3B3;
+}
+
+
+#result_img {
+  width: 80%;
 }
 
 #mymbti {
-  font-size: 40px;
-  color: #ffca14;
-  box-sizing: border-box;
-  background-color: #1449FF;
-  border : 6px solid;
-  border-color: #ffca14;
+  text-align: center;
+  color: #1449FF;
+  font-weight: bold;
+}
 
+#job_name {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+#job_explain {
+  text-align: left;
+  line-height: 200%;
+}
+
+#skill_title {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+#skill_list {
+  list-style: decimal;
+  padding-left: 5%;
+  text-align: left;
 }
