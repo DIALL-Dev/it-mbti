@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -28,17 +27,18 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <div id="wrap">
     <!-- 시작화면 -->
     <div id="main" class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="mt-5 title_box fs-2">나에게 어울리는 IT 직군은?</h1>
+          <h1 class="mt-5 title_box font-1">나에게 어울리는 IT 직군은?</h1>
           <img class="mt-5" src="img/mbti_main.png" width="100%">
-          <h6 class="mt-5 text_box fs-5">IT 기업에 취직하고 싶은 취준생, 이직러들 모두 집중!<br><br>내 MBTI 유형으로 나에게 맞는 IT 직군을 찾아보자!</h6>
+          <h6 class="mt-5 text_box font-5">IT 기업에 취직하고 싶은 취준생, 이직러들 모두 집중!<br><br>내 MBTI 유형으로 나에게 맞는 IT 직군을 찾아보자!</h6>
           <div class="d-grid gap-2">
-            <button id="start_btn" class="mt-5 large_btn fs-3" type="button">START</button>
+            <button id="start_btn" class="mt-5 large_btn font-3" type="button">START</button>
           </div>
         </div>
       </div>
@@ -47,17 +47,17 @@
     <div id="test" class="container">
       <div class="row">
         <div class="col-12">
-          <p id="number" class="mt-5 fs-6">문제번호 1/12</p>
+          <p id="number" class="mt-5 font-6">문제번호 1/12</p>
           <div class="progress">
             <div id="progress" class="progress-bar bg-success" role="progressbar" style="" aria-valuenow=""
               aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <h3 id="title" class="mt-5 fs-4" style="color: black;">문제타이틀</h3>
-          <h5 id="description" class="mt-3 text_box fs-6">문제의 구체적인 내용이 들어갑니다</h5>
+          <h5 id="description" class="mt-3 text_box font-6">문제의 구체적인 내용이 들어갑니다</h5>
           <input type="hidden" id="type" value="EI">
           <div class="mt-5 d-grid gap-3">
-            <button id="A" class="small_btn fs-6" type="button">선택값 A</button>
-            <button id="B" class="small_btn fs-6" type="button">선택값 B</button>
+            <button id="A" class="small_btn font-6" type="button">선택값 A</button>
+            <button id="B" class="small_btn font-6" type="button">선택값 B</button>
           </div>
         </div>
       </div>
@@ -66,14 +66,14 @@
     <div id="result" class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="title_box mt-3 fs-2">나에게 어울리는 직군은 바로!</h1>
+          <h1 class="title_box mt-3 font-2">나에게 어울리는 직군은 바로!</h1>
           <div id="result_content_wrap" class="mt-5">
-            <h2 id="mymbti" class="mt-0 mb-0 fs-3">mbti 결과</h2>
+            <h2 id="mymbti" class="mt-0 mb-0 font-3">mbti 결과</h2>
             <img id="result_img" src="img/result.jpeg" alt="결과이미지" class="mt-4">
-            <h4 id="job_slogan" class="mt-5 mb-0 fs-6">슬로건 입력</h4>
-            <h3 id="job_name" class="mt-2 mb-0 fs-4">직군 이름</h3>
-            <h6 id="job_explain" class="mt-4 mb-0 fs-6">결과 자세한 설명</h6>
-            <h3 id="skill_title" class="mt-5 mb-0 fs-4">필요 역량</h3>
+            <h4 id="job_slogan" class="mt-5 mb-0 font-6">슬로건 입력</h4>
+            <h3 id="job_name" class="mt-2 mb-0 font-4">직군 이름</h3>
+            <h6 id="job_explain" class="mt-4 mb-0 font-6">결과 자세한 설명</h6>
+            <h3 id="skill_title" class="mt-5 mb-0 font-4">필요 역량</h3>
             <ul id="skill_list" class="mt-4 mb-0">
               <li id="list1">#1</li>
               <li id="list2">#2</li>
@@ -83,15 +83,15 @@
           </div>
 
           <div class="mt-5 d-grid gap-3">
-            <button id="retry_btn" class="small_btn fs-6" type="button">
+            <button id="retry_btn" class="small_btn font-6" type="button">
               <img src="img/retry_icon.png" style="margin-bottom: 0.1em; width: 1.2em; height: 1.2em;">
               테스트 다시하기
             </button>
-            <button id="share_btn" class="small_btn fs-6" type="button">
+            <button id="share_btn" class="small_btn font-6" type="button">
               <img src="img/kakao_icon.png" style="margin-bottom: 0.1em; width: 1.1em; height: 1.1em;">
               카카오 공유하기
             </button>
-            <button id="copy_btn" class="small_btn fs-6" type="button">
+            <button id="copy_btn" class="small_btn font-6" type="button">
               <img src="img/copy_icon.png" style="margin-bottom: 0.1em; width: 1.1em; height: 1.1em;">
               <a href="#" id="copy_btn" class="url" onclick="clip(); return false;"> 결과 복사하기</a>
             </button>

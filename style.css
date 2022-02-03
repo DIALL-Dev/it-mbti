@@ -1,22 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
 
 * {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #515151;
   line-height: 200%;
 }
 
+html {
+  font-size: 16px;
+}
 
-.title_box {  
+.body {
+  background-color: black;
+}
+
+.title_box {
   color: #ffca14;
-
   box-sizing: border-box;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
-  background-color: #1449FF;
-  border : 3px solid;
-  padding: 0.5rem;
+  background-color: #1449ff;
+  border: 3px solid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border-color: #ffca14;
   margin-bottom: 0;
   position: relative;
@@ -32,49 +41,42 @@
 }
 
 .large_btn {
-  background-color: #1449FF;
-  color: #FFFFFF;
+  background-color: #1449ff;
+  color: #ffffff;
   height: 3.5rem;
   padding: 0.5rem;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
   border: 0;
-  box-shadow: 4px 4px 10px 2px #B3B3B3;
+  box-shadow: 4px 4px 10px 2px #b3b3b3;
   transition: 0.3s;
   border-radius: 10px;
-  /* width: 70%;
-  margin: auto;
-  display: block; */
 }
 
 .small_btn {
-  background-color: #1449FF;
-  color: #FFFFFF;
+  background-color: #1449ff;
+  color: #ffffff;
   height: 3rem;
   padding: 0.5rem;
   text-align: center;
   vertical-align: middle;
   border: 0;
-  box-shadow: 4px 4px 10px 2px #B3B3B3;
+  box-shadow: 4px 4px 10px 2px #b3b3b3;
   transition: 0.3s;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .large_btn:hover {
   background-color: #ffca14;
-  color: #1449FF;
+  color: #1449ff;
   cursor: pointer;
 }
 
 .small_btn:hover {
   background-color: #ffca14;
-  color: #1449FF;
+  color: #1449ff;
   cursor: pointer;
-}
-
-.body {
-  background-color: black;
 }
 
 .url {
@@ -114,9 +116,8 @@
   border-radius: 20px;
   box-sizing: border-box;
   padding: 5%;
-  box-shadow: 4px 4px 10px 2px #B3B3B3;
+  box-shadow: 4px 4px 10px 2px #b3b3b3;
 }
-
 
 #result_img {
   width: 80%;
@@ -124,7 +125,7 @@
 
 #mymbti {
   text-align: center;
-  color: #1449FF;
+  color: #1449ff;
   font-weight: bold;
 }
 
@@ -150,3 +151,24 @@
   padding-left: 5%;
   text-align: left;
 }
+
+.font-1 {
+  font-size: 1rem;
+}
+
+/* 
+.font-2 {
+  font-size: 2vw;
+}
+
+.font-3 {
+  font-size: 1.5vw;
+}
+
+.font-4 {
+  font-size: 1.5vw;
+}
+
+.font-5 {
+  font-size: 10px;
+} */
