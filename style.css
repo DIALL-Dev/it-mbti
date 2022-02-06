@@ -50,7 +50,7 @@ body {
   vertical-align: middle;
   background-color: #1449ff;
   border: 3px solid;
-  padding: 0.7rem;
+  padding: 1rem;
   border-color: #ffca14;
   margin-bottom: 0;
   position: relative;
@@ -60,7 +60,7 @@ body {
 .text_box {
   box-sizing: border-box;
   vertical-align: middle;
-  padding: 0.7rem;
+  padding: 1rem;
   margin-bottom: 0;
   position: relative;
 }
@@ -68,7 +68,7 @@ body {
 .button {
   background-color: #1449ff;
   color: #ffffff;
-  padding: 0.7rem;
+  padding: 1rem;
   text-align: center;
   vertical-align: middle;
   border: 0;
@@ -138,23 +138,23 @@ li {
 }
 
 .font-1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.5;
 }
 
 .font-2 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: bold;
   line-height: 1.5;
 }
 
 .font-3 {
-  font-size: 1.4rem;
-  line-height: 1.2;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .font-4 {
-  font-size: 1.1rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

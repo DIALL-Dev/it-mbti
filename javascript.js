@@ -411,6 +411,13 @@ if (Object.keys(result).includes(shareParams) === true) {
   document
     .querySelector("#result_img")
     .setAttribute("src", "img/result_img/" + result[mbti]["img"]);
+  document.querySelector("#mymbti").innerHTML = result[mbti]["mbti"];
+  document.querySelector("#job_slogan").innerHTML = result[mbti]["job_slogan"];
+  document.querySelector("#job_name").innerHTML = result[mbti]["job_name"];
+  document.querySelector("#list1").innerHTML = result[mbti]["list1"];
+  document.querySelector("#list2").innerHTML = result[mbti]["list2"];
+  document.querySelector("#list3").innerHTML = result[mbti]["list3"];
+  document.querySelector("#list4").innerHTML = result[mbti]["list4"];
 }
 
 // 카카오 SDK 초기화
